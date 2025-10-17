@@ -5,7 +5,8 @@
 Here’s a quick look at the **Pet Accessories Store Website** 🐾  
 
 ### 🖥️ Homepage
-![On Desktop Screen ](<img width="1919" height="881" alt="Screenshot 2025-10-17 191457" src="https://github.com/user-attachments/assets/d3a0be3e-3c07-4280-b776-2d10d54ab5f2" />
+![On Desktop Screen ]<img width="1919" height="881" alt="Screenshot 2025-10-17 191457" src="https://github.com/user-attachments/assets/aefe1581-c334-47fe-93c7-aaad13372358" />
+ />
 )
 
 ### 🐕 Pet Feed Section
