@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pet Accessories Store 🐾</title>
+  <link rel="shortcut icon" href="logo.jpg" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body>
+  <!-- 🌟 Navbar -->
+  <nav class="navbar">
+    <h1>🐾 Pet Accessories Store</h1>
+    <div class="nav-links">
+      <a href="#">Home</a>
+      <a href="#">Shop</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </div>
+
+    <div id="themeSwitch" class="switch">
+  <i class="fas fa-moon moon"></i>
+  <i class="fas fa-sun sun"></i>
+</div>
+  </nav>
+
+  <!-- 🐾 Filters -->
+  <div class="filter-bar">
+    <select id="categorySelect">
+      <option value="">All Categories</option>
+      <option value="Dogs">Dogs</option>
+      <option value="Cats">Cats</option>
+      <option value="Birds">Birds</option>
+    </select>
+    <input id="searchInput" type="text" placeholder="Search (e.g. food, toy, ribbon)" />
+    <button id="applyBtn">Apply</button>
+  </div>
+
+  <!-- 🛍️ Product Container -->
+  <div id="productContainer"></div>
+
+  <!-- 💙 Footer -->
+  <footer>
+    Made with 💙 by Azka
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

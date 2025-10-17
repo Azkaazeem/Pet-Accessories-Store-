@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #f9fafb, #f1f5f9);
+    color: #1e293b;
+    transition: all 0.4s ease;
+    min-height: 100vh;
+}
+
+/* 🌙 Dark Mode */
+.dark {
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+    color: #f8fafc;
+}
+
+.navbar {
+    background: linear-gradient(90deg, #38bdf8, #3b82f6);
+    color: white;
+    padding: 15px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar h1 {
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #facc15;
+}
+
+.filter-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 30px auto;
+    flex-wrap: wrap;
+}
+
+select,
+input,
+button {
+    padding: 8px 12px;
+    border-radius: 8px;
+    border: 1px solid #cbd5e1;
+    font-size: 14px;
+    outline: none;
+}
+
+button {
+    background-color: #3b82f6;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #2563eb;
+}
+
+#productContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px 30px 50px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 230px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 10px 15px;
+}
+
+.card-content h3 {
+    font-size: 1.1em;
+    margin-bottom: 5px;
+    color: #334155;
+}
+
+.card-content p {
+    font-size: 0.9em;
+    color: #475569;
+    margin-bottom: 5px;
+}
+
+.price {
+    color: #3b82f6;
+    font-weight: 600;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #3b82f6;
+    color: white;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+}
+
+/* 🌙 Dark Mode Extras */
+.dark .navbar {
+    background: linear-gradient(90deg, #1e3a8a, #1e40af);
+}
+
+.dark .card {
+    background: #334155;
+    color: #f1f5f9;
+    box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3);
+}
+
+.dark .card-content h3 {
+    color: #facc15;
+}
+
+.dark .price {
+    color: #fbbf24;
+}
+
+/* 🌙 Theme Switch */
+.switch {
+    margin-left: 20px;
+    width: 55px;
+    height: 28px;
+    background: #cbd5e1;
+    border-radius: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3px 5px;
+    transition: background 0.4s ease;
+    box-sizing: border-box;
+}
+
+.switch::before {
+    content: "";
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background: white;
+    transition: all 0.4s ease;
+    transform: translateX(0);
+    display: block;
+    margin-left: 1px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.dark .switch {
+    background: #1e40af;
+}
+
+.dark .switch::before {
+    transform: translateX(27px);
+    background: #facc15;
+}
+
+.moon {
+    color: #334155;
+}
+
+.sun {
+    color: #facc15;
+    opacity: 0;
+}
+
+.dark .sun {
+    opacity: 1;
+}
+
+.dark .moon {
+    opacity: 0;
+}
+
+.dark .card-content p {
+    color: #e2e8f0;
+}
